@@ -1,0 +1,27 @@
+<plugin
+		id="com.vp.plugin.sample.linestyle"
+		description="Change Line Style via Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.linestyle.LineStylePlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.linestyle.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.linestyle.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.linestyle.actionset1.LineStyleActionControl"
+					actionType="generalAction"
+					label="Change Line Style"
+					tooltip="Change Line Style via Open API"
+					style="normal"
+					toolbarPath="com.vp.plugin.sample.linestyle.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.linestyle.actions.LineStyleActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
